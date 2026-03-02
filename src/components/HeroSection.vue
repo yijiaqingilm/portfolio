@@ -63,7 +63,7 @@ const socials = [
             enter-to-class="opacity-100 translate-y-0"
           >
             <h1 v-if="loaded" class="font-body font-bold text-5xl sm:text-6xl lg:text-7xl text-zinc-900 dark:text-white leading-tight">
-              易家庆<span class="text-accent">.</span>
+              易家庆<span class="text-accent"></span>
             </h1>
           </Transition>
 
