@@ -10,7 +10,7 @@ defineEmits(['select'])
 
 <template>
   <div
-    class="group block rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 hover:border-accent/30 dark:hover:border-accent/30 hover:shadow-xl hover:shadow-accent/5 transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
+    class="group block rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 hover:border-accent/30 dark:hover:border-accent/30 hover:shadow-xl hover:shadow-accent/5 hover:-translate-y-2 transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
     role="button"
     tabindex="0"
     @click="$emit('select', project)"
@@ -28,7 +28,7 @@ defineEmits(['select'])
       </div>
       <!-- Overlay on hover -->
       <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-300 flex items-center justify-center">
-        <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white dark:bg-zinc-900 rounded-full p-3 shadow-lg">
+        <div class="opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-300 bg-white dark:bg-zinc-900 rounded-full p-3 shadow-lg">
           <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
       </div>

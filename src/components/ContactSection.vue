@@ -2,8 +2,8 @@
 const contactInfo = [
   {
     label: '邮箱',
-    value: '13641452585@163.com',
-    href: 'mailto:13641452585@163.com',
+    value: '171457543@qq.com',
+    href: 'mailto:171457543@qq.com',
     icon: '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
   },
   {
@@ -42,11 +42,11 @@ const contactInfo = [
           v-for="item in contactInfo"
           :key="item.label"
           :href="item.href || undefined"
-          class="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 sm:p-6 transition-all duration-250"
-          :class="item.href ? 'hover:border-accent/30 dark:hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/30' : ''"
+          class="group bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 sm:p-6 transition-all duration-300"
+          :class="item.href ? 'hover:border-accent/30 dark:hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 hover:-translate-y-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/30' : ''"
         >
           <div class="flex sm:flex-col items-center sm:items-center gap-3 sm:gap-0">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center shrink-0 sm:mx-auto sm:mb-4">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center shrink-0 sm:mx-auto sm:mb-4 group-hover:scale-110 group-hover:bg-accent/20 transition-all duration-300">
               <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="item.icon"></svg>
             </div>
             <div class="text-left sm:text-center min-w-0">

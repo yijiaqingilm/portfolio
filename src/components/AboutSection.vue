@@ -13,7 +13,7 @@ const stats = [
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <!-- Visual -->
         <div class="fade-up relative">
-          <div class="aspect-[4/3] sm:aspect-square max-w-xs sm:max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-accent/10 via-violet-500/5 to-pink-500/5 dark:from-accent/20 dark:via-violet-500/15 dark:to-pink-500/10 border border-zinc-200 dark:border-zinc-800">
+          <div class="aspect-[4/3] sm:aspect-square max-w-xs sm:max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-accent/10 via-violet-500/5 to-pink-500/5 dark:from-accent/20 dark:via-violet-500/15 dark:to-pink-500/10 border border-zinc-200 dark:border-zinc-800 hover:border-accent/30 hover:shadow-2xl hover:shadow-accent/10 hover:scale-[1.02] transition-all duration-500">
             <div class="w-full h-full flex items-center justify-center">
               <div class="text-center px-6 sm:px-10 py-6 sm:py-8">
                 <div class="w-16 h-16 sm:w-20 sm:h-20 bg-accent/10 dark:bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-5 sm:mb-8 rotate-6">
@@ -59,9 +59,9 @@ const stats = [
 
           <!-- Stats -->
           <div class="fade-up mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6">
-            <div v-for="stat in stats" :key="stat.label" class="text-center">
-              <div class="font-body font-bold text-2xl sm:text-3xl text-zinc-900 dark:text-white">{{ stat.value }}</div>
-              <div class="mt-1 text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">{{ stat.label }}</div>
+            <div v-for="stat in stats" :key="stat.label" class="text-center group cursor-default">
+              <div class="font-body font-bold text-2xl sm:text-3xl text-zinc-900 dark:text-white group-hover:text-accent group-hover:scale-110 transition-all duration-300 origin-center">{{ stat.value }}</div>
+              <div class="mt-1 text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider group-hover:text-zinc-700 dark:group-hover:text-zinc-300 transition-colors duration-300">{{ stat.label }}</div>
             </div>
           </div>
         </div>

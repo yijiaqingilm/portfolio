@@ -33,7 +33,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   >
     <div class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
       <a href="#" class="font-display text-2xl font-bold text-zinc-900 dark:text-white cursor-pointer">
-        家庆<span class="text-accent">.</span>
+        whatyi27
       </a>
 
       <div class="hidden md:flex items-center gap-8">
@@ -41,7 +41,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
           v-for="link in links"
           :key="link.href"
           :href="link.href"
-          class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200 cursor-pointer"
+          class="relative text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200 cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-accent after:rounded-full after:transition-all after:duration-300"
         >
           {{ link.label }}
         </a>

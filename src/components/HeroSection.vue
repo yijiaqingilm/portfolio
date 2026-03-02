@@ -85,7 +85,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
               <span
                 v-for="tech in techStack"
                 :key="tech"
-                class="px-3 py-1 text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 rounded-lg border border-zinc-200/60 dark:border-zinc-700/60"
+                class="px-3 py-1 text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 rounded-lg border border-zinc-200/60 dark:border-zinc-700/60 hover:bg-accent/10 hover:text-accent hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-200 cursor-default"
               >
                 {{ tech }}
               </span>
@@ -101,14 +101,14 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
             <div v-if="loaded" class="mt-8 flex flex-col sm:flex-row items-start gap-4">
               <a
                 href="#projects"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-white font-semibold rounded-xl hover:bg-accent-hover shadow-lg shadow-accent/20 transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
+                class="inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-white font-semibold rounded-xl hover:bg-accent-hover hover:-translate-y-1 hover:shadow-xl shadow-lg shadow-accent/20 transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
               >
                 查看项目经验
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
               <a
                 href="#contact"
-                class="inline-flex items-center gap-2 px-7 py-3.5 font-semibold border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
+                class="inline-flex items-center gap-2 px-7 py-3.5 font-semibold border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-900 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
               >
                 获取联系方式
               </a>
@@ -125,7 +125,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
         >
           <div v-if="loaded" class="relative hidden lg:block">
             <!-- Main code window -->
-            <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl shadow-zinc-900/5 dark:shadow-black/30 overflow-hidden">
+            <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl shadow-zinc-900/5 dark:shadow-black/30 overflow-hidden hover:shadow-accent/10 hover:border-accent/20 transition-all duration-500">
               <div class="flex items-center gap-1.5 px-4 py-3 bg-zinc-50 dark:bg-zinc-800/80 border-b border-zinc-200 dark:border-zinc-700">
                 <div class="w-3 h-3 rounded-full bg-red-400/80"></div>
                 <div class="w-3 h-3 rounded-full bg-yellow-400/80"></div>
