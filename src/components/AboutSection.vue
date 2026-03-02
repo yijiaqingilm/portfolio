@@ -1,9 +1,9 @@
 <script setup>
 const stats = [
-  { value: '10+', label: '年经验' },
-  { value: '15+', label: '项目交付' },
-  { value: '5', label: '家公司' },
-  { value: '8+', label: '年深耕电商' },
+  { value: '10+', label: '年开发经验' },
+  { value: '15+', label: '项目独立交付' },
+  { value: '7', label: '年最长项目维护' },
+  { value: '0', label: '线上支付事故' },
 ]
 </script>
 
@@ -42,18 +42,18 @@ const stats = [
           <div class="fade-up">
             <span class="text-sm font-bold text-accent uppercase tracking-wider">关于我</span>
             <h2 class="mt-3 font-body font-bold text-3xl sm:text-4xl text-zinc-900 dark:text-white">
-              全栈交付，前端驱动
+              从前端出发，向全栈生长
             </h2>
           </div>
           <div class="fade-up mt-6 space-y-4 text-zinc-500 dark:text-zinc-400 leading-relaxed">
             <p>
-              拥有十年以上软件开发经验，擅长独立完成项目并具备卓越的团队协作能力。精通 Vue.js，熟练使用 Webpack 和 Vite 进行项目构建，积累了丰富的电商平台开发经验。
+              入行十年，大部分时间扎在电商领域。从最初用 jQuery 切页面，到如今围绕 Vue 生态独立交付完整产品——这条路上最大的收获不是技术栈变宽了，而是学会了<span class="text-zinc-700 dark:text-zinc-300 font-medium">从业务出发做技术决策</span>。
             </p>
             <p>
-              在移动端开发方面，专注于微信公众号和微信小程序，拥有多平台电商开发的丰富经验，包括微信支付、第三方支付和海外支付的对接，熟悉跨境电商对接流程。
+              我习惯一个人扛完从需求到上线的全流程：前端用 Vue/uni-app 搭界面，服务端用 Node.js 写接口，数据库自己设计。这种工作方式让我对系统全局有清晰的认知，也让我在跨境电商海关对接、蓝牙硬件通信这类<span class="text-zinc-700 dark:text-zinc-300 font-medium">跨领域问题</span>上能快速找到落地方案。
             </p>
             <p>
-              此外具备 WebSocket、蓝牙模块的对接经验，熟悉微信开放平台及微信小店对接。对 Node.js 及服务端架构有深入了解，精通 MySQL 数据库设计与优化。
+              我不是那种追新框架的人，更在意<span class="text-zinc-700 dark:text-zinc-300 font-medium">代码能不能持续跑三年五年</span>。我维护最久的项目已经第七年了，依然在线上稳定服务——这是我最引以为傲的事。
             </p>
           </div>
 
