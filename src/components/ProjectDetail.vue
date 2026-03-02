@@ -32,12 +32,12 @@ function onKeydown(e) {
       <div
         v-if="project"
         class="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-6"
-        @click="onOverlayClick"
-        @keydown="onKeydown"
         tabindex="-1"
         role="dialog"
         aria-modal="true"
         :aria-label="project.title"
+        @click="onOverlayClick"
+        @keydown="onKeydown"
       >
         <Transition
           enter-active-class="transition-all duration-300 ease-out"

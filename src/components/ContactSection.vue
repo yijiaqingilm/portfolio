@@ -47,7 +47,7 @@ const contactInfo = [
         >
           <div class="flex sm:flex-col items-center sm:items-center gap-3 sm:gap-0">
             <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center shrink-0 sm:mx-auto sm:mb-4 group-hover:scale-110 group-hover:bg-accent/20 transition-all duration-300">
-              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="item.icon"></svg>
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="item.icon"/>
             </div>
             <div class="text-left sm:text-center min-w-0">
               <div class="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-0.5 sm:mb-1">{{ item.label }}</div>

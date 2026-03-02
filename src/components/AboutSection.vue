@@ -23,9 +23,9 @@ const stats = [
                 </div>
                 <p class="font-display text-xl sm:text-3xl leading-snug">
                   <span class="text-zinc-800 dark:text-zinc-100 font-semibold">代码有逻辑</span>
-                  <br>
+                  <br/>
                   <span class="text-zinc-400 dark:text-zinc-500 mx-2 text-base sm:text-lg">·</span>
-                  <br>
+                  <br/>
                   <span class="text-accent font-semibold">做事有温度</span>
                 </p>
               </div>

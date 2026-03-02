@@ -67,7 +67,7 @@ const skillGroups = [
           class="fade-up group bg-zinc-50 dark:bg-zinc-900 rounded-2xl border border-zinc-100 dark:border-zinc-800 p-6 hover:border-accent/20 dark:hover:border-accent/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/5 transition-all duration-300 cursor-default"
         >
           <div class="w-11 h-11 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
-            <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="group.icon"></svg>
+            <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="group.icon"/>
           </div>
           <h3 class="font-body font-bold text-zinc-900 dark:text-white mb-3">{{ group.title }}</h3>
           <ul class="space-y-2">

@@ -2,7 +2,6 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useDarkMode } from '../composables/useDarkMode'
 import ThemeToggle from './ThemeToggle.vue'
-
 const { isDark, toggle } = useDarkMode()
 const scrolled = ref(false)
 const mobileOpen = ref(false)
