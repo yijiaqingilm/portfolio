@@ -13,15 +13,21 @@ const stats = [
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <!-- Visual -->
         <div class="fade-up relative">
-          <div class="aspect-square max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-accent/20 via-violet-500/10 to-pink-500/10 dark:from-accent/30 dark:via-violet-500/20 dark:to-pink-500/20 border border-zinc-200 dark:border-zinc-800">
+          <div class="aspect-square max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-accent/10 via-violet-500/5 to-pink-500/5 dark:from-accent/20 dark:via-violet-500/15 dark:to-pink-500/10 border border-zinc-200 dark:border-zinc-800">
             <div class="w-full h-full flex items-center justify-center">
-              <div class="text-center p-8">
-                <div class="w-28 h-28 bg-accent/10 dark:bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg class="w-14 h-14 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <div class="text-center px-10 py-8">
+                <div class="w-20 h-20 bg-accent/10 dark:bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-8 rotate-6">
+                  <svg class="w-10 h-10 text-accent -rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/>
                   </svg>
                 </div>
-                <p class="font-display text-3xl text-zinc-600 dark:text-zinc-300">十年磨一剑</p>
+                <p class="font-display text-2xl sm:text-3xl leading-snug">
+                  <span class="text-zinc-800 dark:text-zinc-100 font-semibold">代码有逻辑</span>
+                  <br>
+                  <span class="text-zinc-400 dark:text-zinc-500 mx-2 text-lg">·</span>
+                  <br>
+                  <span class="text-accent font-semibold">做事有温度</span>
+                </p>
               </div>
             </div>
           </div>
