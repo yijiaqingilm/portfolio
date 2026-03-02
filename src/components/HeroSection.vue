@@ -57,7 +57,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
             enter-from-class="opacity-0 translate-y-6"
             enter-to-class="opacity-100 translate-y-0"
           >
-            <h1 v-if="loaded" class="font-body font-bold text-4xl sm:text-6xl lg:text-7xl text-zinc-900 dark:text-white leading-tight">
+            <h1 v-if="loaded" class="font-body font-extrabold text-4xl sm:text-6xl lg:text-7xl text-zinc-900 dark:text-white leading-tight tracking-tight">
               易家庆<span class="text-accent"></span>
             </h1>
           </Transition>
@@ -68,10 +68,10 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
             enter-from-class="opacity-0 translate-y-6"
             enter-to-class="opacity-100 translate-y-0"
           >
-            <p v-if="loaded" class="mt-4 sm:mt-5 text-base sm:text-xl text-zinc-500 dark:text-zinc-400 max-w-lg leading-relaxed">
+            <p v-if="loaded" class="mt-4 sm:mt-5 text-base sm:text-xl text-zinc-500 dark:text-zinc-300 max-w-lg leading-relaxed">
               十年以上开发经验，专注
-              <span class="text-zinc-700 dark:text-zinc-300 font-semibold">Vue 生态</span>与
-              <span class="text-zinc-700 dark:text-zinc-300 font-semibold">微信小程序</span>开发，擅长电商平台与跨境电商全栈交付。正在寻找新的职业机会，期待加入优秀的团队。
+              <span class="text-zinc-700 dark:text-zinc-100 font-semibold">Vue 生态</span>与
+              <span class="text-zinc-700 dark:text-zinc-100 font-semibold">微信小程序</span>开发，擅长电商平台与跨境电商全栈交付。正在寻找新的职业机会，期待加入优秀的团队。
             </p>
           </Transition>
 
@@ -85,7 +85,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
               <span
                 v-for="tech in techStack"
                 :key="tech"
-                class="px-3 py-1 text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 rounded-lg border border-zinc-200/60 dark:border-zinc-700/60 hover:bg-accent/10 hover:text-accent hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-200 cursor-default"
+                class="px-3 py-1 text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 rounded-lg border border-zinc-200/60 dark:border-zinc-700/60 hover:bg-accent/10 hover:text-accent hover:border-accent/30 hover:-translate-y-0.5 transition-all duration-200 cursor-default"
               >
                 {{ tech }}
               </span>
@@ -108,7 +108,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
               </a>
               <a
                 href="#contact"
-                class="inline-flex items-center gap-2 px-7 py-3.5 font-semibold border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-900 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
+                class="inline-flex items-center gap-2 px-7 py-3.5 font-semibold border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/60 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 dark:focus:ring-offset-zinc-950"
               >
                 获取联系方式
               </a>

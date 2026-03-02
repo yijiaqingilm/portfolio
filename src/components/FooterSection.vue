@@ -8,7 +8,7 @@ const year = new Date().getFullYear()
       <a href="#" class="font-display text-xl font-bold text-zinc-900 dark:text-white cursor-pointer">
         whatyi27
       </a>
-      <p class="text-sm text-zinc-400 dark:text-zinc-500">
+      <p class="text-sm text-zinc-400 dark:text-zinc-400">
         &copy; {{ year }} 易家庆.
       </p>
     </div>

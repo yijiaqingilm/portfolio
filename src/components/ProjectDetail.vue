@@ -74,7 +74,7 @@ function onKeydown(e) {
             <div class="flex-1 overflow-y-auto p-6 sm:p-8">
               <!-- Tags -->
               <div class="flex items-center gap-2 flex-wrap mb-3">
-                <span class="px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
+                <span class="px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-300">
                   {{ project.category }}
                 </span>
                 <span class="px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-accent/10 dark:bg-accent/20 text-accent">
@@ -82,8 +82,8 @@ function onKeydown(e) {
                 </span>
               </div>
 
-              <h2 class="font-body font-bold text-2xl text-zinc-900 dark:text-white">{{ project.title }}</h2>
-              <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">{{ project.company }}</p>
+              <h2 class="font-body font-extrabold text-2xl text-zinc-900 dark:text-white tracking-tight">{{ project.title }}</h2>
+              <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-300">{{ project.company }}</p>
 
               <!-- Tech tags -->
               <div class="flex flex-wrap gap-1.5 mt-4">
@@ -97,7 +97,7 @@ function onKeydown(e) {
               </div>
 
               <!-- Description sections -->
-              <div class="mt-6 space-y-4 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              <div class="mt-6 space-y-4 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
                 <p>{{ project.description }}</p>
                 <div v-for="(section, i) in project.details" :key="i">
                   <h3 class="font-body font-bold text-zinc-900 dark:text-white text-sm mb-2">{{ section.heading }}</h3>

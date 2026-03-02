@@ -27,10 +27,10 @@ const contactInfo = [
     <div class="max-w-4xl mx-auto section-padding text-center">
       <div class="fade-up">
         <span class="text-sm font-bold text-accent uppercase tracking-wider">联系方式</span>
-        <h2 class="mt-3 font-body font-bold text-3xl sm:text-4xl text-zinc-900 dark:text-white">
+        <h2 class="mt-3 font-body font-extrabold text-3xl sm:text-4xl text-zinc-900 dark:text-white tracking-tight">
           期待您的联系
         </h2>
-        <p class="mt-4 text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-lg mx-auto">
+        <p class="mt-4 text-zinc-500 dark:text-zinc-300 leading-relaxed max-w-lg mx-auto">
           如果您觉得我的经历和技能符合团队需求，欢迎随时通过以下方式与我取得联系。
         </p>
       </div>
@@ -50,7 +50,7 @@ const contactInfo = [
               <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="item.icon"/>
             </div>
             <div class="text-left sm:text-center min-w-0">
-              <div class="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-0.5 sm:mb-1">{{ item.label }}</div>
+              <div class="text-xs font-semibold text-zinc-400 dark:text-zinc-400 uppercase tracking-wider mb-0.5 sm:mb-1">{{ item.label }}</div>
               <div class="text-sm font-semibold text-zinc-900 dark:text-white truncate">{{ item.value }}</div>
             </div>
           </div>

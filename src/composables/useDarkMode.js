@@ -5,7 +5,9 @@ const isDark = ref(false)
 export function useDarkMode() {
   onMounted(() => {
     const stored = localStorage.getItem('theme')
-    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (stored === 'light') {
+      isDark.value = false
+    } else {
       isDark.value = true
     }
     applyTheme()

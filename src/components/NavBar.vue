@@ -10,6 +10,7 @@ const links = [
   { label: '作品', href: '#projects' },
   { label: '关于', href: '#about' },
   { label: '技能', href: '#skills' },
+  { label: '履历', href: '#experience' },
   { label: '联系', href: '#contact' },
 ]
 
@@ -40,7 +41,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
           v-for="link in links"
           :key="link.href"
           :href="link.href"
-          class="relative text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200 cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-accent after:rounded-full after:transition-all after:duration-300"
+          class="relative text-sm font-semibold text-zinc-500 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200 cursor-pointer after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:bg-accent after:rounded-full after:transition-all after:duration-300"
         >
           {{ link.label }}
         </a>
@@ -50,7 +51,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       <div class="flex items-center gap-3 md:hidden">
         <ThemeToggle :is-dark="isDark" @toggle="toggle" />
         <button
-          class="p-2 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200 cursor-pointer rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/30"
+          class="p-2 text-zinc-500 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200 cursor-pointer rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/30"
           aria-label="切换菜单"
           @click="mobileOpen = !mobileOpen"
         >
@@ -74,7 +75,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
             v-for="link in links"
             :key="link.href"
             :href="link.href"
-            class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 py-2.5 px-3 rounded-lg transition-colors duration-200 cursor-pointer"
+            class="text-sm font-semibold text-zinc-500 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 py-2.5 px-3 rounded-lg transition-colors duration-200 cursor-pointer"
             @click="mobileOpen = false"
           >
             {{ link.label }}

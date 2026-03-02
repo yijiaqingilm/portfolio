@@ -200,10 +200,10 @@ const filteredProjects = computed(() =>
     <div class="max-w-6xl mx-auto section-padding">
       <div class="text-center max-w-2xl mx-auto mb-12 fade-up">
         <span class="text-sm font-bold text-accent uppercase tracking-wider">项目经历</span>
-        <h2 class="mt-3 font-body font-bold text-3xl sm:text-4xl text-zinc-900 dark:text-white">
+        <h2 class="mt-3 font-body font-extrabold text-3xl sm:text-4xl text-zinc-900 dark:text-white tracking-tight">
           精选项目
         </h2>
-        <p class="mt-4 text-zinc-500 dark:text-zinc-400 leading-relaxed">
+        <p class="mt-4 text-zinc-500 dark:text-zinc-300 leading-relaxed">
           深耕电商与智能硬件领域，独立负责客户端与服务端全栈开发。
         </p>
       </div>
@@ -217,7 +217,7 @@ const filteredProjects = computed(() =>
           :class="[
             activeFilter === filter
               ? 'bg-accent text-white shadow-md shadow-accent/20'
-              : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+              : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
           ]"
           @click="activeFilter = filter"
         >

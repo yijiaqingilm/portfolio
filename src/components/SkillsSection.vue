@@ -52,10 +52,10 @@ const skillGroups = [
     <div class="max-w-6xl mx-auto section-padding">
       <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
         <span class="text-sm font-bold text-accent uppercase tracking-wider">技术能力</span>
-        <h2 class="mt-3 font-body font-bold text-3xl sm:text-4xl text-zinc-900 dark:text-white">
+        <h2 class="mt-3 font-body font-extrabold text-3xl sm:text-4xl text-zinc-900 dark:text-white tracking-tight">
           十年沉淀的技术栈
         </h2>
-        <p class="mt-4 text-zinc-500 dark:text-zinc-400 leading-relaxed">
+        <p class="mt-4 text-zinc-500 dark:text-zinc-300 leading-relaxed">
           不追求技术栈的宽度，更看重每一项在生产环境中的深度与可靠性。
         </p>
       </div>
@@ -74,7 +74,7 @@ const skillGroups = [
             <li
               v-for="skill in group.skills"
               :key="skill"
-              class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:translate-x-1 transition-all duration-200"
+              class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-100 hover:translate-x-1 transition-all duration-200"
             >
               <div class="w-1.5 h-1.5 rounded-full bg-accent/60 shrink-0"></div>
               {{ skill }}

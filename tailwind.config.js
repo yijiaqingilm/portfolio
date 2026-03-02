@@ -10,7 +10,7 @@ export default {
       },
       fontFamily: {
         display: ['Caveat', 'cursive'],
-        body: ['Quicksand', 'sans-serif'],
+        body: ['Inter', '"PingFang SC"', '"Hiragino Sans GB"', '"Microsoft YaHei"', 'sans-serif'],
       },
     },
   },

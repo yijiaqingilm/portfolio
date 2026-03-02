@@ -47,7 +47,7 @@ defineEmits(['select'])
       <h3 class="font-body font-bold text-lg text-zinc-900 dark:text-white group-hover:text-accent transition-colors duration-200">
         {{ project.title }}
       </h3>
-      <p class="mt-1.5 text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed line-clamp-2">
+      <p class="mt-1.5 text-sm text-zinc-500 dark:text-zinc-300 leading-relaxed line-clamp-2">
         {{ project.description }}
       </p>
       <span class="inline-flex items-center gap-1 mt-3 text-xs font-semibold text-accent group-hover:gap-2 transition-all duration-200">

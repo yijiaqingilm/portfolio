@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection.vue'
 import ProjectGrid from './components/ProjectGrid.vue'
 import AboutSection from './components/AboutSection.vue'
 import SkillsSection from './components/SkillsSection.vue'
+import ExperienceSection from './components/ExperienceSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import FooterSection from './components/FooterSection.vue'
 
@@ -18,6 +19,7 @@ useScrollReveal()
     <ProjectGrid />
     <AboutSection />
     <SkillsSection />
+    <ExperienceSection />
     <ContactSection />
   </main>
   <FooterSection />
