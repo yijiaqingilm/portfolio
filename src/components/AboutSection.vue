@@ -13,18 +13,18 @@ const stats = [
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <!-- Visual -->
         <div class="fade-up relative">
-          <div class="aspect-square max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-accent/10 via-violet-500/5 to-pink-500/5 dark:from-accent/20 dark:via-violet-500/15 dark:to-pink-500/10 border border-zinc-200 dark:border-zinc-800">
+          <div class="aspect-[4/3] sm:aspect-square max-w-xs sm:max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-accent/10 via-violet-500/5 to-pink-500/5 dark:from-accent/20 dark:via-violet-500/15 dark:to-pink-500/10 border border-zinc-200 dark:border-zinc-800">
             <div class="w-full h-full flex items-center justify-center">
-              <div class="text-center px-10 py-8">
-                <div class="w-20 h-20 bg-accent/10 dark:bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-8 rotate-6">
-                  <svg class="w-10 h-10 text-accent -rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <div class="text-center px-6 sm:px-10 py-6 sm:py-8">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 bg-accent/10 dark:bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-5 sm:mb-8 rotate-6">
+                  <svg class="w-8 h-8 sm:w-10 sm:h-10 text-accent -rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/>
                   </svg>
                 </div>
-                <p class="font-display text-2xl sm:text-3xl leading-snug">
+                <p class="font-display text-xl sm:text-3xl leading-snug">
                   <span class="text-zinc-800 dark:text-zinc-100 font-semibold">代码有逻辑</span>
                   <br>
-                  <span class="text-zinc-400 dark:text-zinc-500 mx-2 text-lg">·</span>
+                  <span class="text-zinc-400 dark:text-zinc-500 mx-2 text-base sm:text-lg">·</span>
                   <br>
                   <span class="text-accent font-semibold">做事有温度</span>
                 </p>
@@ -32,7 +32,7 @@ const stats = [
             </div>
           </div>
           <!-- Decorative dots -->
-          <div class="absolute -bottom-4 -right-4 w-24 h-24 grid grid-cols-4 gap-2 opacity-20 dark:opacity-10" aria-hidden="true">
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 grid grid-cols-4 gap-2 opacity-20 dark:opacity-10 hidden sm:grid" aria-hidden="true">
             <div v-for="i in 16" :key="i" class="w-2 h-2 rounded-full bg-accent"></div>
           </div>
         </div>

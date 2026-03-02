@@ -70,12 +70,12 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       leave-to-class="opacity-0 -translate-y-2"
     >
       <div v-if="mobileOpen" class="md:hidden px-4 pb-4">
-        <div class="flex flex-col gap-2 pt-2 border-t border-zinc-200 dark:border-zinc-800">
+        <div class="flex flex-col gap-1 pt-2 border-t border-zinc-200 dark:border-zinc-800">
           <a
             v-for="link in links"
             :key="link.href"
             :href="link.href"
-            class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white py-2 transition-colors duration-200 cursor-pointer"
+            class="text-sm font-semibold text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 py-2.5 px-3 rounded-lg transition-colors duration-200 cursor-pointer"
             @click="mobileOpen = false"
           >
             {{ link.label }}

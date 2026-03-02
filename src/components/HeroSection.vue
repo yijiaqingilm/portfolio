@@ -14,9 +14,9 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
   <section class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
     <!-- Background -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-      <div class="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-accent/5 dark:bg-accent/10 blur-3xl"></div>
-      <div class="absolute top-1/2 -left-40 w-[500px] h-[500px] rounded-full bg-violet-500/5 dark:bg-violet-500/10 blur-3xl"></div>
-      <div class="absolute bottom-20 right-1/4 w-[300px] h-[300px] rounded-full bg-emerald-500/5 dark:bg-emerald-500/8 blur-3xl"></div>
+      <div class="absolute -top-40 -right-40 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] rounded-full bg-accent/5 dark:bg-accent/10 blur-3xl"></div>
+      <div class="absolute top-1/2 -left-40 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full bg-violet-500/5 dark:bg-violet-500/10 blur-3xl"></div>
+      <div class="absolute bottom-20 right-1/4 w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] rounded-full bg-emerald-500/5 dark:bg-emerald-500/8 blur-3xl"></div>
       <!-- Dot grid -->
       <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]" style="background-image: radial-gradient(circle, currentColor 1px, transparent 1px); background-size: 32px 32px;"></div>
     </div>
@@ -46,7 +46,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
             enter-from-class="opacity-0 translate-y-6"
             enter-to-class="opacity-100 translate-y-0"
           >
-            <p v-if="loaded" class="font-display text-2xl sm:text-3xl text-accent mb-3">
+            <p v-if="loaded" class="font-display text-xl sm:text-3xl text-accent mb-3">
               你好，我是
             </p>
           </Transition>
@@ -57,7 +57,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
             enter-from-class="opacity-0 translate-y-6"
             enter-to-class="opacity-100 translate-y-0"
           >
-            <h1 v-if="loaded" class="font-body font-bold text-5xl sm:text-6xl lg:text-7xl text-zinc-900 dark:text-white leading-tight">
+            <h1 v-if="loaded" class="font-body font-bold text-4xl sm:text-6xl lg:text-7xl text-zinc-900 dark:text-white leading-tight">
               易家庆<span class="text-accent"></span>
             </h1>
           </Transition>
@@ -68,7 +68,7 @@ const techStack = ['Vue', 'Vite', 'uni-app', 'TypeScript', 'Node.js', '微信小
             enter-from-class="opacity-0 translate-y-6"
             enter-to-class="opacity-100 translate-y-0"
           >
-            <p v-if="loaded" class="mt-5 text-lg sm:text-xl text-zinc-500 dark:text-zinc-400 max-w-lg leading-relaxed">
+            <p v-if="loaded" class="mt-4 sm:mt-5 text-base sm:text-xl text-zinc-500 dark:text-zinc-400 max-w-lg leading-relaxed">
               十年以上开发经验，专注
               <span class="text-zinc-700 dark:text-zinc-300 font-semibold">Vue 生态</span>与
               <span class="text-zinc-700 dark:text-zinc-300 font-semibold">微信小程序</span>开发，擅长电商平台与跨境电商全栈交付。正在寻找新的职业机会，期待加入优秀的团队。

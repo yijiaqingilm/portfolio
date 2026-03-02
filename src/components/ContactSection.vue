@@ -36,20 +36,24 @@ const contactInfo = [
       </div>
 
       <!-- Contact cards -->
-      <div class="fade-up mt-12 grid sm:grid-cols-3 gap-4 sm:gap-6">
+      <div class="fade-up mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6">
         <component
           :is="item.href ? 'a' : 'div'"
           v-for="item in contactInfo"
           :key="item.label"
           :href="item.href || undefined"
-          class="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 transition-all duration-250"
+          class="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 sm:p-6 transition-all duration-250"
           :class="item.href ? 'hover:border-accent/30 dark:hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/30' : ''"
         >
-          <div class="w-12 h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="item.icon"></svg>
+          <div class="flex sm:flex-col items-center sm:items-center gap-3 sm:gap-0">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center shrink-0 sm:mx-auto sm:mb-4">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" v-html="item.icon"></svg>
+            </div>
+            <div class="text-left sm:text-center min-w-0">
+              <div class="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-0.5 sm:mb-1">{{ item.label }}</div>
+              <div class="text-sm font-semibold text-zinc-900 dark:text-white truncate">{{ item.value }}</div>
+            </div>
           </div>
-          <div class="text-xs font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-1">{{ item.label }}</div>
-          <div class="text-sm font-semibold text-zinc-900 dark:text-white">{{ item.value }}</div>
         </component>
       </div>
 

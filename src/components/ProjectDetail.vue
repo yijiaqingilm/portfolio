@@ -50,10 +50,14 @@ function onKeydown(e) {
         >
           <div
             v-if="project"
-            class="bg-white dark:bg-zinc-900 w-full sm:max-w-2xl max-h-[90vh] rounded-t-2xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden flex flex-col"
+            class="bg-white dark:bg-zinc-900 w-full sm:max-w-2xl max-h-[85vh] sm:max-h-[90vh] rounded-t-2xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden flex flex-col"
           >
+            <!-- Drag indicator (mobile) -->
+            <div class="sm:hidden flex justify-center pt-2 pb-1 shrink-0">
+              <div class="w-10 h-1 rounded-full bg-zinc-300 dark:bg-zinc-600"></div>
+            </div>
             <!-- Header gradient -->
-            <div class="relative h-32 sm:h-40 shrink-0" :class="project.gradient">
+            <div class="relative h-28 sm:h-40 shrink-0" :class="project.gradient">
               <div class="absolute inset-0 flex items-center justify-center">
                 <svg class="w-16 h-16 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
               </div>
