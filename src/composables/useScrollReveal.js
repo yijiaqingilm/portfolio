@@ -20,7 +20,7 @@ export function useScrollReveal() {
           }
         })
       },
-      { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -30px 0px' },
     )
 
     document.querySelectorAll('.fade-up').forEach(observeElement)

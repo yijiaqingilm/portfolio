@@ -1,22 +1,25 @@
 <script setup>
-import { watch } from 'vue'
+  import { watch } from 'vue'
 
-const props = defineProps({
-  project: { type: Object, default: null },
-})
-const emit = defineEmits(['close'])
+  const props = defineProps({
+    project: { type: Object, default: null },
+  })
+  const emit = defineEmits(['close'])
 
-watch(() => props.project, (val) => {
-  document.body.style.overflow = val ? 'hidden' : ''
-})
+  watch(
+    () => props.project,
+    (val) => {
+      document.body.style.overflow = val ? 'hidden' : ''
+    },
+  )
 
-function onOverlayClick(e) {
-  if (e.target === e.currentTarget) emit('close')
-}
+  function onOverlayClick(e) {
+    if (e.target === e.currentTarget) emit('close')
+  }
 
-function onKeydown(e) {
-  if (e.key === 'Escape') emit('close')
-}
+  function onKeydown(e) {
+    if (e.key === 'Escape') emit('close')
+  }
 </script>
 
 <template>
@@ -59,14 +62,36 @@ function onKeydown(e) {
             <!-- Header gradient -->
             <div class="relative h-28 sm:h-40 shrink-0" :class="project.gradient">
               <div class="absolute inset-0 flex items-center justify-center">
-                <svg class="w-16 h-16 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <svg
+                  class="w-16 h-16 text-white/60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
               </div>
               <button
                 class="absolute top-3 right-3 w-9 h-9 bg-black/20 hover:bg-black/40 rounded-full flex items-center justify-center text-white transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-white/50"
                 aria-label="关闭"
                 @click="emit('close')"
               >
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <svg
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
               </button>
             </div>
 
@@ -74,15 +99,23 @@ function onKeydown(e) {
             <div class="flex-1 overflow-y-auto p-6 sm:p-8">
               <!-- Tags -->
               <div class="flex items-center gap-2 flex-wrap mb-3">
-                <span class="px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-300">
+                <span
+                  class="px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-300"
+                >
                   {{ project.category }}
                 </span>
-                <span class="px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-accent/10 dark:bg-accent/20 text-accent">
+                <span
+                  class="px-2.5 py-0.5 text-[11px] font-bold rounded-full bg-accent/10 dark:bg-accent/20 text-accent"
+                >
                   {{ project.period }}
                 </span>
               </div>
 
-              <h2 class="font-body font-extrabold text-2xl text-zinc-900 dark:text-white tracking-tight">{{ project.title }}</h2>
+              <h2
+                class="font-body font-extrabold text-2xl text-zinc-900 dark:text-white tracking-tight"
+              >
+                {{ project.title }}
+              </h2>
               <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-300">{{ project.company }}</p>
 
               <!-- Tech tags -->
@@ -100,7 +133,9 @@ function onKeydown(e) {
               <div class="mt-6 space-y-4 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
                 <p>{{ project.description }}</p>
                 <div v-for="(section, i) in project.details" :key="i">
-                  <h3 class="font-body font-bold text-zinc-900 dark:text-white text-sm mb-2">{{ section.heading }}</h3>
+                  <h3 class="font-body font-bold text-zinc-900 dark:text-white text-sm mb-2">
+                    {{ section.heading }}
+                  </h3>
                   <ul v-if="section.items" class="space-y-1.5">
                     <li v-for="(item, j) in section.items" :key="j" class="flex items-start gap-2">
                       <div class="w-1.5 h-1.5 rounded-full bg-accent/60 shrink-0 mt-1.5"></div>
@@ -113,7 +148,9 @@ function onKeydown(e) {
             </div>
 
             <!-- Footer -->
-            <div class="shrink-0 border-t border-zinc-100 dark:border-zinc-800 px-6 sm:px-8 py-4 flex justify-end">
+            <div
+              class="shrink-0 border-t border-zinc-100 dark:border-zinc-800 px-6 sm:px-8 py-4 flex justify-end"
+            >
               <button
                 class="px-5 py-2.5 bg-accent text-white text-sm font-semibold rounded-xl hover:bg-accent-hover transition-colors duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 dark:focus:ring-offset-zinc-900"
                 @click="emit('close')"
